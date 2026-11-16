@@ -1,0 +1,9 @@
+# Site statique : pas de build, on publie la racine du dépôt.
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
